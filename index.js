@@ -37,6 +37,10 @@ app.use("/version", versionRoutes);
 app.use("/health", healthRoutes);
 
 
-app.listen(process.env.PORT, process.env.HOSTNAME, () => {
-  console.log(`app listening at http://${process.env.HOSTNAME}:${process.env.PORT}/`);
-});
+// app.listen(process.env.PORT,() => {
+//   console.log(`app listeningg at http://${process.env.HOSTNAME}:${process.env.PORT}/`);
+// });
+
+app.listen(process.env.PORT, () => {
+  console.log(`this app listening at http://localhost:${process.env.PORT}`)
+})
